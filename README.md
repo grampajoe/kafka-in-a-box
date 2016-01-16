@@ -9,3 +9,8 @@ along with its own Zookeeper server at `[docker machine ip]:2181`.
 
 **Only use this for testing and development! Maybe not even that! It's not
 very good and you'll lose data!**
+
+Kafka's scripts and stuff are available, too, e.g.
+
+    $ docker run --rm -it grampajoe/kafka-in-a-box bin/kafka-topics.sh --list \
+        --zookeeper zk-host:2181
